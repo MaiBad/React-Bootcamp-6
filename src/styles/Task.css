@@ -1,0 +1,44 @@
+.data {
+    padding: 0.45rem;
+    margin: 0.45rem;
+}
+
+.badge {
+    color: #fff;
+    padding: 0.25rem;
+    border-radius: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.badge-normal {
+    background-color: #0291d3;
+}
+
+.badge-urgent {
+    background-color: #e0a932;
+}
+
+.badge-blocking {
+    background-color: #c21b1b;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.completed .data:nth-child(1),
+.completed .data:nth-child(2) {
+    color: #adff2f;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:860px) {
+    .data {
+        padding: 0.3rem;
+        margin: 0.3rem;
+        font-size: 0.8rem;
+    }
+}
